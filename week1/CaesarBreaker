@@ -1,0 +1,28 @@
+/**
+ * Write a description of CaesarCipher2keys here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+import java.util.Arrays;
+import edu.duke.*;
+
+public class CaesarBreaker {
+    
+    final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";  
+
+    /**
+     * Count occurancies of letters in string.
+     * @param   msg String for which number of letters is to be calculated
+     * @return  int array containing frequencie of letters
+     */
+    public int[] countLetters (String msg) {
+        int[] counts = new int[26];
+        for (char c : msg.toCharArray()) {
+            char cuc = Character.toUpperCase(c);
+            if (Character.isAlphabetic(cuc)) counts[ALPHABET.indexOf(cuc)]++;
+        }
+           
+        return counts;
+    }
+    
