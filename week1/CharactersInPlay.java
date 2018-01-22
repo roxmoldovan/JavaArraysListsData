@@ -7,8 +7,8 @@ import java.util.ArrayList;
  *  Program to determine the characters in one of Shakespeare's plays 
  *  that have the most speaking parts. 
  * 
- * @author Pawel Daniluk 
- * @version 2015-11-22
+ * @author 
+ * @version 
  */
 public class CharactersInPlay {
     
